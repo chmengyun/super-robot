@@ -1,0 +1,41 @@
+{
+  "code": 200,
+  "message": "success",
+  "processed_data": {
+      "testCases": [
+        {
+          "id": "BaiduST首页001",
+          "feature": "App启动功能",
+          "description": "验证App是否能正常启动",
+          "precondition": "成功下载安装App",
+          "input": "无数据输入",
+          "steps": "1.点击App进入应用首页",
+          "expected": "1.App正常启动\n2.过渡动画展示完毕弹出【登录】按钮\n3.点击【登录】按钮可进入登录页面\n4.文字与背景布局正确显示",
+          "priority": "中",
+          "method": "错误推测法"
+        },
+        {
+          "id": "BaiduST首页002",
+          "feature": "网络异常处理",
+          "description": "验证App在网络连接中断时的反应",
+          "precondition": "当前网络环境不稳定",
+          "input": "无数据输入",
+          "steps": "1.进入App首页",
+          "expected": "1.触发网络中断提示\n2.显示【重新加载】按钮\n3.App内容无法正常显示\n4.页面内容缓慢加载",
+          "priority": "高",
+          "method": "错误推测法"
+        },
+        {
+          "id": "BaiduST首页003",
+          "feature": "边界值测试-低版本浏览器",
+          "description": "验证App在低版本浏览器中的兼容性",
+          "precondition": "使用低版本浏览器访问网站",
+          "input": "无数据输入",
+          "steps": "1.切换到低版本浏览器",
+          "expected": "1.页面内容正确显示\n2.App功能正常运行\n3.浏览速度变慢",
+          "priority": "高",
+          "method": "错误推测法"
+        }
+      ]
+  }
+}
